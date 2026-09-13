@@ -1,0 +1,14 @@
+@{ ViewData["Title"]="Admin Login"; }
+<div class="form-card small login-card">
+    <div class="login-symbol">♙</div>
+    <p class="eyebrow">ADMIN AREA</p>
+    <h1>Admin Login</h1>
+    <p class="hint">Sign in to manage Kanishk Jewellers.</p>
+    @if(ViewBag.Error != null){<div class="error-box">@ViewBag.Error</div>}
+    <form asp-action="Login" method="post">
+        @Html.AntiForgeryToken()
+        <div class="form-group"><label>Admin Name</label><input name="username" class="form-control" placeholder="Enter admin name" autocomplete="username" required /></div>
+        <div class="form-group"><label>Password</label><input name="password" type="password" class="form-control" placeholder="Enter password" autocomplete="current-password" required /></div>
+        <button type="submit" class="btn primary full">Login</button>
+    </form>
+</div>

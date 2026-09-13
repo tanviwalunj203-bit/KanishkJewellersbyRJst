@@ -1,0 +1,50 @@
+@{ ViewData["Title"] = "Home"; }
+
+<section class="lux-hero" aria-label="Kanishk Jewellers luxury collection">
+  <div class="hero-copy">
+    <p class="eyebrow">KANISHK JEWELLERS</p>
+    <div class="gold-line"></div>
+    <h1>Timeless<br/>Elegance</h1>
+    <p class="hero-sub">Pure Gold <span>|</span> Exquisite Designs <span>|</span> Lasting Value</p>
+    <a class="btn hero-btn" asp-controller="Jewellery" asp-action="Index">View Jewellery <span>→</span></a>
+  </div>
+  <div class="hero-model">
+    <img src="~/images/hero-model.png" alt="Kanishk Jewellers" />
+  </div>
+</section>
+
+<section class="trust-row" aria-label="Why choose Kanishk Jewellers">
+  <div class="trust-item"><div class="trust-icon">♢</div><b>100%</b><span>Hallmarked Gold</span></div>
+  <div class="trust-item"><div class="trust-icon">◇</div><b>Premium</b><span>Quality</span></div>
+  <div class="trust-item"><div class="trust-icon">✿</div><b>Exclusive</b><span>Designs</span></div>
+  <div class="trust-item"><div class="trust-icon">♙</div><b>Customer</b><span>Satisfaction</span></div>
+</section>
+
+<section class="collection-showcase" aria-labelledby="collection-title">
+  <div class="section-title">
+    <div class="title-rule"></div><p>EXPLORE OUR</p><div class="title-rule"></div>
+    <h2 id="collection-title">Jewellery Collection</h2>
+  </div>
+  <div class="category-cards">
+    <a asp-controller="Jewellery" asp-action="Index" asp-route-category="Necklace" class="category-card">
+      <img class="category-photo" src="~/images/necklace.jpg" alt="Necklaces" /><strong>Necklaces <span>→</span></strong>
+    </a>
+    <a asp-controller="Jewellery" asp-action="Index" asp-route-category="Bangle" class="category-card">
+      <img class="category-photo" src="~/images/bangles.jpg" alt="Bangles" /><strong>Bangles <span>→</span></strong>
+    </a>
+    <a asp-controller="Jewellery" asp-action="Index" asp-route-category="Earrings" class="category-card">
+      <img class="category-photo" src="~/images/earrings.jpg" alt="Earrings" /><strong>Earrings <span>→</span></strong>
+    </a>
+    <a asp-controller="Jewellery" asp-action="Index" asp-route-category="Ring" class="category-card">
+      <img class="category-photo" src="~/images/rings.jpg" alt="Rings" /><strong>Rings <span>→</span></strong>
+    </a>
+  </div>
+</section>
+
+<section class="closing-banner" aria-label="Kanishk Jewellers promise">
+  <div class="corner-flower left"></div><div class="corner-flower right"></div>
+  <p>TRADITIONAL MEETS MODERNITY</p>
+  <h2>Jewellery for Every Moment</h2>
+  <em>Because You Deserve the Best</em>
+  <div class="heart">♡</div>
+</section>
